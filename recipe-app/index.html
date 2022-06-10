@@ -6,49 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe App</title>
 
+    <script
+      src="https://kit.fontawesome.com/be44af5f19.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="./vendor/owl-carousel/css/owl.carousel.min.css"
+    />
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
   </head>
   <body>
     <div class="mobile-container">
       <header>
         <input type="text" />
-        <button id="search">Search</button>
+        <button id="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </header>
-      <div class="fav-container">
-        <h3>Favorite Meals</h3>
-        <ul>
+      <div class="fav-container carousel">
+        <ul class="fav-meals owl-carousel owl-theme">
           <li>
             <img
-              src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg/preview"
+              src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg"
               alt=""
             /><span>Carbonara</span>
           </li>
           <li>
             <img
-              src="https://www.themealdb.com/images/media/meals/uvuyxu1503067369.jpg/preview"
+              src="https://www.themealdb.com/images/media/meals/uvuyxu1503067369.jpg"
               alt=""
             /><span>Taco</span>
           </li>
           <li>
             <img
-              src="https://www.themealdb.com/images/media/meals/wai9bw1619788844.jpg/preview"
+              src="https://www.themealdb.com/images/media/meals/wai9bw1619788844.jpg"
               alt=""
             /><span>Rice</span>
+          </li>
+          <li>
+            <img
+              src="https://www.themealdb.com/images/media/meals/rvtvuw1511190488.jpg"
+              alt=""
+            /><span>Chowder</span>
+          </li>
+          <li>
+            <img
+              src="https://www.themealdb.com/images/media/meals/wurrux1468416624.jpg"
+              alt=""
+            /><span>Tart</span>
+          </li>
+          <li>
+            <img
+              src="https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg"
+              alt=""
+            /><span>Pasta</span>
           </li>
         </ul>
       </div>
       <div class="meals">
         <div class="meal">
           <div class="meal-header">
-            <img src="" alt="" />
+            <span class="random">Random Recipe</span>
+            <img
+              class="meal-img"
+              src="https://www.themealdb.com/images/media/meals/rtwwvv1511799504.jpg"
+              alt=""
+            />
           </div>
           <div class="meal-body">
-            <h4>Ha Ha Ha :)</h4>
-            <button></button>
+            <h4>Prawn & Fennel Bisque</h4>
+            <button class="fav-btn"><i class="fa-solid fa-heart"></i></button>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="./vendor/jQuery/jQuery.3.6.0.js"></script>
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="./script.js" defer></script>
   </body>
 </html>
